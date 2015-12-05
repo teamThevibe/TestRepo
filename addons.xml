@@ -870,6 +870,57 @@
   </extension>
 </addon>
 
+<addon
+  id="plugin.audio.99fm-playlists"
+  name="99FM Playlists"
+  version="0.1.0"
+  provider-name="nirelbaz">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">99FM - The greatest songs</summary>
+        <description lang="en">Great collection of songs created by the gifted 99FM radio station music editors</description>
+        <disclaimer lang="en">This is an unofficial addon which created to make 99FM website playlists accessible to Kodi users</disclaimer>
+        <language>he</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+        <forum></forum>
+        <website>http://nirelbaz.com/</website>
+        <email>nir@nirelbaz.com</email>
+        <source></source>
+    </extension>
+</addon>
+
+<addon
+  id="plugin.audio.kodcast"
+  name="Kodcast"
+  version="0.0.1"
+  provider-name="Nir Elbaz">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.requests" version="2.8.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Listen to the best podcasts in Israel</summary>
+        <description lang="en">Listen to hundreds of Israel's finest podcasts: radio stations, lectures, interviews and more!</description>
+        <disclaimer lang="en">All content in this plugin is served as is from iCast website and is an -unofficial- extension of this website.</disclaimer>
+        <language>he</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+        <website>http://nirelbaz.com/</website>
+        <email>nir@nirelbaz.com</email>
+    </extension>
+</addon>
+
 	<addon id="plugin.audio.MD3-Audio" version="1.0.2" name="MD3 Audio" provider-name="Mucky Duck">
 		<requires>
 			<import addon="xbmc.python"   version="2.1.0"/>
@@ -981,6 +1032,40 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.VibeW" name="Vibe Wizard" version="2.9" provider-name="The-vibe.co.il">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" optional="false"/>
+    <import addon="repository.thevibe" version="2.0" optional="false"/>
+	<import addon="service.htpt"  version="0.1.69"  optional="false"/>
+	<import addon="weather.yahoo" version="3.0.7" optional="false"/>
+	<import addon="plugin.video.youtube" version="5.1.9" optional="false" />
+    <import addon="plugin.video.genesis" version="5.1.4" optional="false"/>
+    <import addon="script.artwork.downloader" version="12.0.20" optional="false"/>
+    <import addon="service.library.data.provider" version="0.1.1" optional="false"/>
+    <import addon="script.skinshortcuts" version="0.6.6" optional="false"/>
+	<import addon="script.tv.show.next.aired" version="60.0.14"/>
+	<import addon="script.globalsearch" version="3.0.4"/>
+	<import addon="service.skin.widgets" version="0.0.29"/>
+    <import addon="plugin.video.thewiz.wall" version="2.1.3" optional="false"/>
+	<import addon="service.subtitles.torec"  version="1.0.5" optional="false"/>
+	<import addon="service.EMupdater"  version="1.0.7"    optional="false"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Vibe Wizard</summary>
+    <description lang="en">In this wizard you will find the latest Vibe build</description>
+	<description lang="he">קודי בלחיצה, כל מה שאתם צריכים נמצא כאן</description>
+    <disclaimer lang="en">Visit The-vibe.co.il for more info.</disclaimer>
+	<disclaimer lang="he">כנסו לאתר the-vibe.co.il </disclaimer>
+    <forum>http://the-vibe.co.il</forum>
+    <source>http://the-vibe.co.il</source>
+    <website>http://the-vibe.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.10qtv" name="10qtv" version="1.0.7" provider-name="GO BEITAR NORDIA">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1029,7 +1114,7 @@
 
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
-       version="1.3.3"
+       version="1.3.6"
        provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1094,6 +1179,38 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
     <summary lang="en"></summary>
     <description lang="en"></description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.filmehd.net" provider-name="The[COLOR tan]Highway[/COLOR]"
+       version="1.1.1" name="FilmeHD.net" >
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.urlresolver"  />
+  	<import addon="script.module.metahandler"  />
+  	<import addon="script.module.addon.common" />
+  	<import addon="script.common.plugin.cache" />
+  	<import addon="script.module.t0mm0.common" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+  	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary>FILME ONLINE GRATIS, SUBTITRATE IN LIMBA ROMANA!</summary>
+  	<summary lang="en">MOVIES ONLINE FREE, SUBTITLED IN ROMAINIAN!</summary>
+  	<summary lang="ro">FILME ONLINE GRATIS, SUBTITRATE IN LIMBA ROMANA!</summary>
+  	<description>Video Addon for FilmeHD.net that has Romanian Subtitles.  The development of this add-on was sponsored by dotSmart Media Player.     </description>
+  	<description lang="en">Video Addon for FilmeHD.net that has Romanian Subtitles.  The development of this add-on was sponsored by dotSmart Media Player.</description>
+  	<description lang="ro">Addon video pentru filmehd.net cu subtitrare in limba romana.  Dezvoltarea acestui add-on a fost sponsorizata de catre dotSmart Media Player.</description>
+  	<disclaimer>By using this, you take reponsibility for anything that happens.  Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing. I take no responsibility for any problems this plugin might in any way, form, shape or size cause. This is project is for a LEARNING EXPERIANCE.</disclaimer>
+  	<disclaimer lang="en">By using this, you take reponsibility for anything that happens.  Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing. I take no responsibility for any problems this plugin might in any way, form, shape or size cause. This is project is for a LEARNING EXPERIANCE.</disclaimer>
+  	<disclaimer lang="ro">By using this, you take reponsibility for anything that happens.  Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing. I take no responsibility for any problems this plugin might in any way, form, shape or size cause. This is project is for a LEARNING EXPERIANCE.</disclaimer>
+  	<language>ro en</language>
+  	<platform>all</platform>
+    <forum>http://webchat.snoonet.org/#The_Projects</forum>
+    <website>http://www.dotsmart.ro/</website>
+    <source>http://github.com/HIGHWAY99/</source>
+    <email></email>
   </extension>
 </addon>
 
@@ -1295,6 +1412,33 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
   </extension>
 </addon>
 
+<addon id="plugin.video.kidstv"
+       name="KidsTV"
+       version="1.0.0"
+       provider-name="Hybrid\Donatello">
+  <requires>
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.beautifulsoup4" version="4.3.1" />
+ <import addon="script.module.requests" version="2.3.0" />
+ <import addon="script.module.html5lib" version="0.999.0" />
+ <import addon="script.video.F4mProxy" version="2.1.7"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">This plugin let you watch kids channels VOD.</summary>
+    <description lang="en">
+    Watch kids channel VOD.
+Hybrid donations: https://goo.gl/5MLzGS
+Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
+	</description>
+    <platform>all</platform>
+ <language>en</language>
+ <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
+  </extension>
+</addon>
+
 
 <addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="10.0.0" provider-name="jmarth">
     <requires>
@@ -1347,6 +1491,43 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
     <summary lang="en">NATURE HD</summary>
     <description lang="en">NATURE HD</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.korea-xxx" name="korean XXX" version="1.1.0" provider-name="IPTVxtra">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>IPTVxtra Team</summary>
+    <description>koreanisches XXX TV</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.live.shows"
+       name="LiveShows"
+       version="1.0.4"
+       provider-name="xbmchub.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>liveshows</summary>
+    <description>Browse full concerts on Youtube from a pre-defined XML List. Send an email to thegreatboognish43@gmail.com if you would like to help build the list. Enjoy! **HUGE Thanks to everyone who tapes, records, edits and uploads these videos for everyone to enjoy!**</description>
+    <platform>all</platform>
+    <forum>http://www.xbmchub.com/forums/official-xbmc-hub-repo/</forum>
+    <website>http://www.xbmchub.com/</website>
   </extension>
 </addon>
 
@@ -1408,7 +1589,7 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
   </extension>
 </addon>
 
-<addon id="plugin.video.movixws" name="Movix.me" version="1.2.2" provider-name="IsraeLive Team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
+<addon id="plugin.video.movixws" name="Movix.me" version="1.2.4" provider-name="IsraeLive Team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver"/>
@@ -1646,23 +1827,25 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
     </extension>
  </addon>
 
-<addon id="plugin.video.VibeW" name="Vibe Wizard" version="1.5" provider-name="vibe.co.il">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="repository.thevibe" version="2.0" optional="false"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-		<summary lang="en">Vibe Wizard</summary>
-		<description lang="en">In this wizard you will find the latest Vibe build</description>
-		<disclaimer lang="en">Visit vibe.co.il for more info.</disclaimer>
-		<forum>http://the-vibe.co.il</forum>
-		<source>http://the-vibe.co.il</source>
-		<website>http://the-vibe.co.il</website>
-		<platform>all</platform>
-	</extension>
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Live" provider-name="tvaddons.ag" version="11.0.5">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.pyxbmctmanager" />
+        <import addon="script.module.beautifulsoup" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="setup.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
+        <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://www.ustvnow.com/newuser_usa.php</description>
+        <platform>all</platform>
+        <forum>http://forums.tvaddons.ag/forums/149-USTVNOW-PLUGIN-FOR-KODI</forum>
+        <website>http://www.ustvnow.com/</website>
+    </extension>
 </addon>
 
 <addon id="plugin.video.wallaNew.video" name="וואלה" version="2.2.0" provider-name="sbentin shlomico">
@@ -1732,6 +1915,76 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
         </supportedcontent>
     </extension>
 
+</addon>
+
+<addon id="plugin.video.youtube" name="YouTube" version="5.1.10" provider-name="bromix">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <summary lang="en">Plugin for YouTube</summary>
+        <description lang="en">YouTube is a one of the biggest video-sharing websites of the world.</description>
+		<summary lang="de">Plugin für YouTube</summary>
+        <description lang="de">YouTube ist ein eines der größten Video-Sharing-Websites der Welt.</description>
+        <summary lang="pl">Wtyczka YouTube</summary>
+        <description lang="pl">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
+		<summary lang="hu">Kiegészítő  a YouTube-hoz</summary>
+        <description lang="hu">A YouTube a világ egyik legnagyobb videómegosztó weboldala.</description>
+        <summary lang="es">Plugin para YouTube</summary>
+        <description lang="es">YouTube es un uno de los mayores sitios web de intercambio de vídeos del mundo.</description>
+        <summary lang="ru">Видеодополнение YouTube</summary>
+        <description lang="ru">Данное дополнение позволяет находить и смотреть видео на всеми любимом сайте.</description>
+        <summary lang="fr">Plugin pour YouTube</summary>
+        <description lang="fr">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+        <summary lang="zh">YouTube附加元件</summary>
+        <description lang="zh">「Youtube」是全世界最大的影片分享網站</description>
+        <summary lang="bg">Добавка за YouTube</summary>
+        <description lang="bg">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+		<disclaimer lang="en"></disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=200735</forum>
+		<website>http://www.youtube.com</website>
+		<email>bromix at gmx dot net</email>
+		<source>https://github.com/bromix/plugin.video.youtube</source>
+	</extension>
+</addon>
+
+<addon
+  id="pvr.iptvsimple"
+  version="1.9.3"
+  name="PVR IPTV Simple Client"
+  provider-name="nightik">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="1.9.0"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="XBMC_IPTV_Simple.pvr"
+    library_osx="XBMC_IPTV_Simple.pvr"
+    library_wingl="XBMC_IPTV_Simple_win32.dll"
+    library_windx="XBMC_IPTV_Simple_win32.dll"
+    library_android="libXBMC_IPTV_Simple.so" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">XBMC PVR addon for IPTV support. https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ru">XBMC PVR аддон для поддержки IPTV.  https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="de">XBMC PVR Addon für IPTV Unterstützung. https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="nl">XBMC PVR addon voor IPTV support. https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <description lang="en">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="ru">Интерфейс для IPTV. Поддерживает просмотр потокового ТВ для юникаст/мультикаст источников, прослушивание радиоканалов и работу с электронным телегидом.</description>
+    <description lang="de">IPTV Simple PVR Client unterstützt m3u Wiedergabelisten, streamen von Live TV für multicast/unicast Quellen, Radio Kanäle hören und EPG.</description>
+    <description lang="nl">IPTV Simple PVR Client ondersteunt m3u afspeellijsten, streaming of Live TV voor multicast/unicast bronnen, luisteren naar Radio kanalen en EPG.</description>
+    <disclaimer lang="en">This is unstable software The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="ru">Это нестабильная программа Авторы не несут ответственности за неудачные воспроизведение, неверные время EPG, потраченное время и прочие нежелательные эффекты.</disclaimer>
+    <disclaimer lang="de">Dies ist instabile Software Die Autoren sind zu keiner Zeit verantworlich für fehlerhafte Abspielungen, falsche EPG Zeiten oder andere Unvorhersehbarkeiten.</disclaimer>
+    <disclaimer lang="nl">Dit is onstabiele software De auteurs zijn op geen enkele manier aansprakelijk voor falen in afspelen, incorrecte EPG tijden, verspilde uren, of wel ongewenst effect dan ook.</disclaimer>
+    <platform>linux windx wingl osx android</platform>
+  </extension>
 </addon>
 
 <addon id="repository.abeksis" name=".[COLOR blue]Abeksis Privet[/COLOR][COLOR white] Repository[/COLOR]" version="1.0" provider-name="Abeksis">
@@ -1901,17 +2154,34 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
 	</extension>
 </addon>
 
-<addon id="repository.podgod" name="podgod repo" version="1.6" provider-name="podgod">
+<addon id="repository.podgod" name="podgod repo" version="1.7" provider-name="podgod">
 	<extension point="xbmc.addon.repository" name="PodGod Addon Repository">
-		<info compressed="false">http://podgod.mtlfreetv.com/Podgod/repo/addons.xml</info>
-		<checksum>http://podgod.mtlfreetv.com/Podgod/repo/addons.xml.md5</checksum>
-		<datadir zip="true">http://podgod.mtlfreetv.com/Podgod/repo/zips</datadir>
+		<info compressed="false">http://offshoregit.com/podgod/repo/addons.xml</info>
+		<checksum>http://offshoregit.com/podgod/repo/addons.xml.md5</checksum>
+		<datadir zip="true">http://offshoregit.com/podgod/repo/zips</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install My Addons</summary>
 		<description>Download and install addons from podgod!</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.romanvm" version="2.0.0" name="Roman V.M. Repository" provider-name="Roman V.M.">
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Roman V.M. Repository</summary>
+  <summary lang="ru">Репозиторий Roman V.M.</summary>
+  <summary lang="uk">Репозиторій Roman V.M.</summary>
+  <description lang="en">Addon repository by Roman V.M.</description>
+  <description lang="ru">Репозиторий дополнений Roman V.M.</description>
+  <description lang="uk">Репозиторій надбудов Roman V.M.</description>
+  <platform>all</platform>
+</extension>
+<extension point="xbmc.addon.repository" name="romanvm repository">
+  <info compressed="false">http://romanvm.github.io/kodi_repo/repo/addons.xml</info>
+  <checksum>http://romanvm.github.io/kodi_repo/repo/addons.xml.md5</checksum>
+  <datadir zip="true">http://romanvm.github.io/kodi_repo/repo</datadir>
+</extension>
 </addon>
 
 <addon id="repository.ru"
@@ -1922,7 +2192,7 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
   <import addon="xbmc.addon" version="12.0.0"/>
 </requires>
 	<extension point="xbmc.addon.repository" name="XBMC.ru forum Add-ons">
-		<info compressed="true">https://github.com/xbmcrus/XBMC.ru-forum-Add-ons/raw/master/addons.xml</info>
+		<info compressed="false">https://github.com/xbmcrus/XBMC.ru-forum-Add-ons/raw/master/addons.xml</info>
 		<checksum>https://github.com/xbmcrus/XBMC.ru-forum-Add-ons/raw/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://github.com/xbmcrus/XBMC.ru-forum-Add-ons/raw/master/</datadir>
 	</extension>
@@ -1935,6 +2205,20 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
 		<disclaimer lang="ru">Разработчики XBMC не являются авторами этих дополнений и не несут ответственность за их содержимое.</disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.thevibe" name="TheVibe Team Repository" version="2.0" provider-name="TheVibe Team">
+    <extension point="xbmc.addon.repository" name=".TheVibe Repository ">
+        <info compressed="false">https://raw.githubusercontent.com/teamThevibe/repository.thevibe/master/Repo/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/teamThevibe/repository.thevibe/master/Repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/teamThevibe/repository.thevibe/master/Repo/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>heVibe Team Repository</summary>
+        <description>heVibe Team Repository</description>
+        <description>heVibe Team Repository</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.thevibe.test" name="TheVibe Team test Repository" version="2.0" provider-name="TheVibe Team">
@@ -1992,6 +2276,25 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
         <description>Download and install addons for XBMC Israeli streaming repo for streaming sites</description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.xstream" name="xStream Repository" version="1.0.5" provider-name="Lynx187">
+    <extension point="xbmc.addon.repository" name="xStream Repository">
+        <info compressed="false">http://raw.github.com/Lynx187/xStreamRepo/master/addons.xml</info>
+		<checksum>http://raw.github.com/Lynx187/xStreamRepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/Lynx187/xStreamRepo/master/</datadir>
+        <dir>
+            <info ompressed="false">http://xstream-addon.square7.ch/repo/addons.xml</info>
+            <checksum>http://xstream-addon.square7.ch/repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://xstream-addon.square7.ch/repo/</datadir>
+        </dir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>xStream Repository</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon
@@ -2372,33 +2675,6 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="3.1.1" provider-name="phil65">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-		<import addon="script.module.youtube.dl" version="14.519.1"/>
-<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
-		<import addon="script.module.pil" version="1.1.7"/>
-	</requires>
-	<extension point="xbmc.python.script"           library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.python.library"          library="default.py" />
-	<extension point="xbmc.python.pluginsource"     library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<language/>
-		<summary lang="en">ExtendedInfo Script</summary>
-		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
-		<source>https://github.com/phil65/script.extendedinfo</source>
-		<email>phil65@kodi.tv</email>
-	</extension>
-</addon>
-
 <addon id="script.favourites" name="Favourites script" version="6.0.2" provider-name="ronie|`Black">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
@@ -2759,6 +3035,83 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="script.navi-x"
+       name="Navi-X"
+       version="4.0"
+       provider-name="Team Navi-X and TVADDONS.ag">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver"  />
+    <import addon="script.module.t0mm0.common"  />
+    <import addon="script.module.addon.common" optional="false" />
+    <import addon="repository.xbmchub" optional="true" />
+    <import addon="plugin.video.youtube" optional="false" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py" >
+    <provides>executable video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>28764</minversion>
+    <summary>Media Browser Addon for Kodi</summary>
+    <description>Navi-X is the oldest and most trusted add-on for Kodi, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
+    <disclaimer>http://www.navixtreme.com/terms/</disclaimer>
+    <forum>http://forums.tvaddons.ag/forums/38-NAVI-X-MEDIA-BROWSER-FOR-KODI</forum>
+    <website>http://www.navixtreme.com/</website>
+    <source></source>
+    <email></email>
+  </extension>
+</addon>
+
+<addon id="script.pseudotv.live" version="0.7.0d" name="PseudoTV Live" provider-name="Lunatixz">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.buggalo" version="1.1.6" optional="false"/>
+        <import addon="script.module.requests" version="2.7.0" optional="false"/>
+        <import addon="script.module.feedparser" version="5.1.3" optional="false"/>
+        <import addon="script.module.simplejson" version="3.3.0" optional="false"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1" optional="false"/>
+        <import addon="script.module.metahandler" version="2.7.0" optional="false"/>
+        <import addon="script.common.plugin.cache" version="2.5.5" optional="false"/>
+        <import addon="script.module.t0mm0.common" version="2.1.1" optional="false"/>
+        <import addon="script.module.youtube.dl" version="15.318.0" optional="false"/>
+        <import addon="script.module.simple.downloader" version="1.9.5" optional="false"/>
+        <import addon="script.artwork.downloader" version="12.0.29" optional="true"/>
+        <import addon="script.tv.show.next.aired" version="6.0.13" optional="true"/>
+        <import addon="plugin.program.super.favourites" version="1.0.35" optional="true"/>
+        <import addon="script.extendedinfo" version="3.0.1" optional="true"/>
+        <import addon="plugin.video.youtube" version="5.1.8" optional="true"/>
+        <import addon="plugin.video.vimeo" version="4.1.4" optional="true"/>
+        <import addon="plugin.video.playonbrowser" version="1.0.3" optional="true"/>
+        <import addon="plugin.video.ustvnow" version="12.0.3" optional="true"/>
+        <import addon="script.module.pil" version="0.0.1" optional="true"/>
+        <import addon="script.skin.helper.service" version="0.0.43" optional="true"/>
+        <import addon="context.pseudotv.live.export" version="1.0.4" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>Programs</provides>
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Channel surfing for your video library and online sources</summary>
+        <description lang="en">PseudoTV Live acts similar to normal broadcast or cable TV, complete with multiple preset and user-defined channels and an EPG.
+        PseudoTV Live can directly integrate with various Kodi plugins and video sources such as Playon, Hdhomerun and PVR backends.</description>
+        <summary lang="pt">Surfing de canal para sua biblioteca de vídeo e streaming on-line</summary>
+        <description lang="pt">PseudoTV Live atua semelhante a transmissão normal ou TV a cabo, completo com pré-ajustes e canais definidos pelo usuário e um EPG.</description>
+        <disclaimer lang="en">This software is a BETA release, bugs maybe common until final release.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <source>https://github.com/Lunatixz/XBMC_Addons/tree/master/script.pseudotv.live</source>
+        <email>pseudotvlive@gmail.com</email>
+        <website>www.pseudotvlive.com</website>
+        <forum>http://forum.kodi.tv/showthread.php?tid=244889</forum>
+    </extension>
+</addon>
+
 <addon id="script.pulsar.eztv-mc" name="Pulsar MC's [COLOR FF89cc48]EZTV[/COLOR] Provider" version="3.0.7" provider-name="mancuniancol">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
@@ -2770,6 +3123,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Pulsar EZTV Provider using the EZTVapi.</summary>
 		<description lang="en">This provider allows to choose the quality of video torrent which will feed Pulsar.[CR]You need to config the add-on before using Pulsar[CR]It only works with TV Shows</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
+		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="script.pulsar.horriblesubs-mc" name="Pulsar MC's [COLOR orange]HorribleSubs (Anime only)[/COLOR] Provider" version="3.0.8" provider-name="mancuniancol">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulsar HorribleSubs Provider with configuration</summary>
+		<description lang="en">This provider allows to choose the quality of video torrent which will feed Pulsar.[CR]You need to config the add-on before using Pulsar[CR]It only works with Movies</description>
 		<language></language>
 		<platform>all</platform>
 		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
@@ -2837,115 +3209,24 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.pulsar.yify-mc" name="Pulsar MC's [COLOR FF89cc48]YIFY[/COLOR] Provider" version="3.0.5" provider-name="mancuniancol">
+<addon id="script.pulsar.yify-mc" name="Pulsar MC's [COLOR FF89cc48]YIFY[/COLOR] Provider" version="4.0.0" provider-name="mancuniancol">
 	<requires>
 		<import addon="xbmc.python" version="2.12.0"/>
         <import addon="plugin.video.pulsar" version="0.3.1"/>
+		<import addon="script.module.beautifulsoup4" optional="false"/>
+        <import addon="script.module.requests" optional="false"/>
 	</requires>
 	<extension point="xbmc.python.script" library="main.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Pulsar YIFY Provider with configuration</summary>
+		<summary lang="en">Pulsar YTS Provider with configuration</summary>
 		<description lang="en">This provider allows to choose the quality of video torrent which will feed Pulsar.[CR]You need to config the add-on before using Pulsar[CR]It only works with Movies</description>
 		<language></language>
 		<platform>all</platform>
 		<forum>http://forum.xbmc.org/showthread.php?tid=204728</forum>
 		<disclaimer lang="en">It only works with Pulsar 0.3.1![CR]It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	</extension>
-</addon>
-
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.0" provider-name="marcelveldt">
-	<requires>
-		<import addon="xbmc.python" version="2.13.0"/>
-		<import addon="xbmc.addon" version="12.0.0"/>
-		<import addon="script.module.pil" version="1.1.7"/>
-		<import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
-	</requires>
-
-    <extension point="xbmc.python.library" library="default.py" />
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
-	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
-		<item>
-			<label>32072</label>
-            <description>Display Series level button in next/recent/in progress episodes listings</description>
-			<visible>Container.Content(episodes) + [!Substring(Container.FolderPath,videodb://tvshows/titles,left) | Substring(Container.FolderPath,xsp=)] + [[!IsEmpty(ListItem.DBID) + !StringCompare(ListItem.DBID,-1)] | !IsEmpty(ListItem.Property(DBID))]</visible>
-		</item>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper service for Kodi skins</summary>
-		<language></language>
-		<platform>all</platform>
-		<license>GPL v2.0</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-	</extension>
-</addon>
-
-<addon id="script.skin.info.service" name="Skin Info Service" version="1.0.1" provider-name="phil65">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-	</requires>
-	<extension point="xbmc.python.library"          library="default.py" />
-    <extension point="xbmc.python.script"           library="default.py">
-        <provides>executable</provides>
-    </extension>
-	<extension point="xbmc.addon.metadata">
-		<language/>
-		<summary lang="en">Script used by skins to show extended media info.</summary>
-		<description lang="en">This script fetches extended information for several media types (artists, albums, movie sets etc.). Needs skin support.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-		<forum>-</forum>
-		<source>-</source>
-		<email>-</email>
-	</extension>
-</addon>
-
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="0.6.5" provider-name="BigNoid,marcelveldt">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
-		<import addon="script.module.unidecode" version="0.4.14"/>
-	</requires>
-	<extension point="xbmc.python.library" library="default.py"/>
-	<extension point="xbmc.addon.metadata">
-		<description lang="bg">Добавка за облици, която осигурява просто управление и списък с потребителски преки пътища (изисква поддръжка от облика)</description>
-		<description lang="de">Add-on für Skins für einfache Bearbeitung und Auflistung von benutzerdefinierten Verknüpfungen (erfordert Skin-Unterstützung)</description>
-		<description lang="el">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description>
-		<description lang="en">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
-		<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
-		<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
-		<description lang="es">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description>
-		<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l'habillage)</description>
-		<description lang="gl">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description>
-		<description lang="hr">Dodatak za presvlake koja omogućava jednostavno upravljanje i prikaz korisnikovih prečaca (zahtijeva podršku presvlake) </description>
-		<description lang="hu">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description>
-		<description lang="is">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description>
-		<description lang="it">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description>
-		<description lang="lt">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo  sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description>
-		<description lang="nl">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description>
-		<description lang="no">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description>
-		<description lang="pl">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description>
-		<description lang="pt">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description>
-		<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description>
-		<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description>
-		<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
-		<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU General Public License, v2</license>
-		<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum>
-		<website></website>
-		<email></email>
-		<source>https://github.com/BigNoid/script.skinshortcuts</source>
 	</extension>
 </addon>
 
@@ -3196,7 +3477,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
-  <extension point="xbmc.service" library="default.py" start="login"></extension>
+  <extension point="xbmc.service" library="default.py" start="login" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Auto Search for Subtitles on Play</summary>
     <description lang="en">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
@@ -3207,6 +3488,36 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <source>https://github.com/amet/service.autosubs</source>
     <forum>http://forum.xbmc.org/showthread.php?tid=198973</forum>
     <email>schumi2004@gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="service.EMupdater"
+       name="EMupdater service"
+       version="1.0.7"
+       provider-name="The-Vibe.co.il">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="repository.thevibe" version="2.0" optional="false"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en"></summary>
+  </extension>
+</addon>
+
+<addon id="service.FMupdater"
+       name="FMupdater service"
+       version="1.0.7"
+       provider-name="The-Vibe.co.il">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="repository.thevibe" version="2.0" optional="false"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Upgrade Service For phenomenal Skin</summary>
   </extension>
 </addon>
 
@@ -3530,11 +3841,11 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 
 <addon
     id="skin.eminence.zeev"
-    version="1.5.3"
+    version="1.5.1"
     name="Eminence Zeev"
     provider-name="jurialmunkey">
   <requires>
-    <import addon="xbmc.gui" version="5.3.0"/>
+    <import addon="xbmc.gui" version="5.9.0"/>
     <import addon="service.skin.widgets" version="0.0.29"/>
     <import addon="service.library.data.provider" version="0.0.7"/>
     <import addon="script.favourites" version="6.0.1"/>
@@ -3543,8 +3854,8 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <import addon="script.skin.helper.service" version="1.0.0"/>
     <import addon="script.extendedinfo" version="3.1.1"/>
     <import addon="script.tv.show.next.aired" version="60.0.14"/>
-  	<import addon="script.skinshortcuts" version="0.6.5"/>
-	<import addon="script.artwork.downloader" version="12.0.29"/>
+    <import addon="script.skinshortcuts" version="0.6.5"/>
+    <import addon="script.artwork.downloader" version="12.0.29"/>
   </requires>
   <extension
   point="xbmc.gui.skin"
@@ -3589,5 +3900,34 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <description lang="pt_BR">Eminence é uma skin que busca simplicidade, funcionalidade e costumização através de uma aparência moderna.</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="skin.phenomenal" name="Phenomenal" version="1.3.0" provider-name="tomer953">
+	<requires>
+		<import addon="xbmc.gui" version="5.9.0"/>
+		<import addon="script.skin.helper.service" version="1.0.0"/>
+		<import addon="script.skinshortcuts" version="0.6.6"/>
+		<!-- <import addon="script.favourites" version="5.0.0"/>
+		<import addon="script.artwork.downloader" version="12.0.20"/>
+		<import addon="script.globalsearch" version="1.1.1"/>
+		<import addon="service.library.data.provider" version="0.1.1"/>
+		<import addon="script.extendedinfo" version="3.0.0"/>
+		-->
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Phenomenal - Perfection Made Simple</summary>
+		<summary lang="he">פנומנל - פשוט להגיע לשלמות</summary>
+		<description lang="en">Elegance, simplicity and professionalism are the skins guidelines. With Phenomenal you can enjoy all of kodi's newest and sophisticated features while still maintaining a clean and beautiful design</description>
+		<description lang="he">Phenomenal - אלגנטיות, פשטות ומקצועיות הם הקווים המנחים של הסקין, עם פנומנל תוכלו להינות משלל האפשרויות המתקדמות שקודי מציעה תוך שמירה על סקין נקי ויפיפה</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-ShareAlike 3.0 license</license>
+		<forum>http://kodisrael.net</forum>
+		<website>http://phenomenal-skin.com</website>
+		<email></email>
+		<source></source>
+	</extension>
 </addon>
 </addons>
